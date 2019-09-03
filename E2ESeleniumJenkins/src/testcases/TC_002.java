@@ -10,10 +10,11 @@ public class TC_002 {
 	{
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		Thread.sleep(10000);
 		driver.get("https://www.facebook.com");
+		Thread.sleep(5000);
 		driver.findElementById("email").sendKeys("Test2");
 		driver.findElementById("pass").sendKeys("test@2");
+		Thread.sleep(5000);
 		driver.quit();
 	}
 

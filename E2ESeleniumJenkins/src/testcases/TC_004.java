@@ -10,10 +10,11 @@ public class TC_004 {
 	{
 		System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver();
-		Thread.sleep(10000);
 		driver.get("https://www.facebook.com");
+		Thread.sleep(5000);
 		driver.findElementById("email").sendKeys("Test4");
 		driver.findElementById("pass").sendKeys("test@4");
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
